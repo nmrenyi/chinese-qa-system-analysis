@@ -1,10 +1,11 @@
 # ref: https://wenxin.baidu.com/moduleApi/ernie3
 # -*- coding: utf-8 -*
 
-import wenxin_api # install via `pip install wenxin-api`
+import wenxin_api  # install via `pip install wenxin-api`
 from wenxin_api.tasks.free_qa import FreeQA
 import sys
 import tomli
+
 
 def baidu_ask(text, ak, sk):
     wenxin_api.ak = ak
@@ -22,6 +23,7 @@ def baidu_ask(text, ak, sk):
     }
     rst = FreeQA.create(**input_dict)['result']
     return rst
+
 
 if __name__ == '__main__':
     q = sys.argv[1] if len(sys.argv) > 1 else '做生意的基本原则是什么？'
