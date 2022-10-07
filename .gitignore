@@ -2,3 +2,4 @@
 *.numbers
 venv/
 credentials/
+.idea/
