@@ -4,7 +4,6 @@ import sys
 import tomli
 
 
-
 def main():
     q = sys.argv[1] if len(sys.argv) > 1 else '世界的终极意义是什么？'
     print('question is: {}'.format(q))
