@@ -3,10 +3,6 @@ from wudaoai.api_request import executeEngine, getToken  # install with `pip ins
 import sys
 import tomli
 
-'''
-   获取接口鉴权token，请求参数 api_Key、 public_key 开放平台个人中心API Keys中获取。
-   token有效期为8小时，建议放入缓存中不必每次请求获取，缓存失效时间设置小于8小时。
-'''
 
 
 def main():
@@ -16,6 +12,8 @@ def main():
         config = tomli.load(f)
     api_key = config['api']['api_key']
     public_key = config['api']['public_key']
+    # 获取接口鉴权token，请求参数 api_Key、 public_key 开放平台个人中心API Keys中获取。
+    # token有效期为8小时，建议放入缓存中不必每次请求获取，缓存失效时间设置小于8小时。
     token = getToken(api_key, public_key)
     res = zhiyuan_ask(q, token)
     print(res)
