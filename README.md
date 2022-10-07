@@ -16,8 +16,8 @@ Computational Linguistics, 2022Fall, Tsinghua University, Homework 1
 
 1. 百度文心:https://wenxin.baidu.com/moduleApi/ernie3 中的自由问答
 2. 智源悟道:https://open.wudaoai.com/ 需要进行注册，注册后在“体验中心”中选择“智能问答”即可
-3. 源1.0:需要先访问https://air.inspur.com/home，注册用户并点击首⻚的“申请API”，填写相关信息后等待批
-准通过。批准通过后访问http://221.194.179.88:11016/?question=中国第一位女皇帝是谁&usrname=lwh&phone=1368888888，将自己的用户名，电话和问题填入其中，即可得到答案。据测试， 源1.0只在工作日批准申请且需要数个工作日，为避免赶不上作业截止日期，请同学们提前申请。
+3. 源1.0:需要先访问https://air.inspur.com/home ，注册用户并点击首⻚的“申请API”，填写相关信息后等待批
+准通过。批准通过后访问http://221.194.179.88:11016/?question=中国第一位女皇帝是谁&usrname=lwh&phone=1368888888 ，将自己的用户名，电话和问题填入其中，即可得到答案。据测试， 源1.0只在工作日批准申请且需要数个工作日，为避免赶不上作业截止日期，请同学们提前申请。
 
 Analyze the accuracy and consistency of each QA system. Analyze the answering capability on different kinds of questions for each QA system. Do case study and analyze.
 
