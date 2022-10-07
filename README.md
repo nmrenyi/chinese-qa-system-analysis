@@ -20,3 +20,18 @@ Computational Linguistics, 2022Fall, Tsinghua University, Homework 1
 准通过。批准通过后访问http://221.194.179.88:11016/?question=中国第一位女皇帝是谁&usrname=lwh&phone=1368888888，将自己的用户名，电话和问题填入其中，即可得到答案。据测试， 源1.0只在工作日批准申请且需要数个工作日，为避免赶不上作业截止日期，请同学们提前申请。
 
 Analyze the accuracy and consistency of each QA system. Analyze the answering capability on different kinds of questions for each QA system. Do case study and analyze.
+
+## Submission
+`qa_submission.xlsx` includes:
+1. 问题编号
+2. 问法编号
+3. 问题类别
+4. 问题
+5. 标准答案
+6. 标准答案来源1(网址)
+7. 标准答案来源1(具体段落)
+8. 标准答案来源2(网址)
+9. 标准答案来源2(具体段落)
+10. 各个模型的回答及其正确与否
+
+Besides the `qa_submission.xlsx`, submit report containing the required analysis in pdf format to the web school.
