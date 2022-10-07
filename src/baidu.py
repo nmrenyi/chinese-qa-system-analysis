@@ -21,7 +21,7 @@ def baidu_ask(text, ak, sk):
         "task_prompt": "qa",
         "mask_type": "word"
     }
-    rst = FreeQA.create(**input_dict)['result']
+    rst = FreeQA.create(**input_dict)['result'].strip()
     return rst
 
 
