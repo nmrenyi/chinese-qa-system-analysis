@@ -1,2 +1,2 @@
-# cl-hw1-chinese-qa-system
+# Chinese QA System
 Computational Linguistics, 2022Fall, Tsinghua University, Homework 1
