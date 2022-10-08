@@ -7,6 +7,12 @@ import tomli
 def main():
     q = sys.argv[1] if len(sys.argv) > 1 else '世界的终极意义是什么？'
     print('question is: {}'.format(q))
+    token = read_zhiyuan_config()
+    res = zhiyuan_ask(q, token)
+    print(res)
+
+
+def read_zhiyuan_config():
     with open('../credentials/zhiyuan.toml', mode='rb') as f:
         config = tomli.load(f)
     api_key = config['api']['api_key']
@@ -14,8 +20,7 @@ def main():
     # 获取接口鉴权token，请求参数 api_Key、 public_key 开放平台个人中心API Keys中获取。
     # token有效期为8小时，建议放入缓存中不必每次请求获取，缓存失效时间设置小于8小时。
     token = getToken(api_key, public_key)
-    res = zhiyuan_ask(q, token)
-    print(res)
+    return token
 
 
 def zhiyuan_ask(q: str, token):
