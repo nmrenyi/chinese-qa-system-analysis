@@ -8,7 +8,7 @@ def main():
     q = sys.argv[1] if len(sys.argv) > 1 else '世界的终极意义是什么？'
     print('question is: {}'.format(q))
     token = read_zhiyuan_config()
-    res = zhiyuan_ask(q, token)
+    res = zhiyuan_ask(q, *token)
     print(res)
 
 
@@ -23,7 +23,7 @@ def read_zhiyuan_config():
     return (token, )
 
 
-def zhiyuan_ask(q: str, token: tuple):
+def zhiyuan_ask(q: str, token: str):
     # 能力类型
     ability_type = "question_answer"
     # 引擎类型
@@ -38,7 +38,7 @@ def zhiyuan_ask(q: str, token: tuple):
         "generatedLength": 128,  # 文本生成最大长度（必填)取值范围1～512
         "prompt": q,  # 标题关键词（必填）取值范围1～200
     }
-    resp = executeEngine(ability_type, engine_type, token[0], data)
+    resp = executeEngine(ability_type, engine_type, token, data)
     res = resp['data']['outputText'].strip()
     return res
 
