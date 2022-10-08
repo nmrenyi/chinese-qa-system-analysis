@@ -25,12 +25,17 @@ def baidu_ask(text, ak, sk):
     return rst
 
 
-if __name__ == '__main__':
-    q = sys.argv[1] if len(sys.argv) > 1 else '做生意的基本原则是什么？'
-    print('question is: {}'.format(q))
+def read_baidu_config():
     with open('../credentials/baidu.toml', mode='rb') as f:
         config = tomli.load(f)
     ak = config['api']['ak']
     sk = config['api']['sk']
+    return ak, sk
+
+
+if __name__ == '__main__':
+    q = sys.argv[1] if len(sys.argv) > 1 else '做生意的基本原则是什么？'
+    print('question is: {}'.format(q))
+    ak, sk = read_baidu_config()
     res = baidu_ask(q, ak, sk)
     print(res)
