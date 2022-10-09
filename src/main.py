@@ -33,6 +33,7 @@ def main():
     print('config is: {}'.format(config))
 
     df = pd.read_csv(in_file, sep='\t')
+    print(df.info())
     ans_list = []
     for q in tqdm(df['question']):
         print('question is: {}'.format(q))
