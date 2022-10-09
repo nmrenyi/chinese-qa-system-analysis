@@ -4,7 +4,6 @@ venv/
 credentials/
 input/
 output/
-scripts/
 
 
 # Python .gitignore from https://github.com/github/gitignore/blob/main/Python.gitignore
