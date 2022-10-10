@@ -37,3 +37,8 @@ Analyze the accuracy and consistency of each QA system. Analyze the answering ca
 10. 各个模型的回答及其正确与否
 
 Besides the `qa_submission.xlsx`, submit report containing the required analysis in pdf format to the web school.
+
+## Resources
+1. [10 Question-Answering Datasets To Build Robust Chatbot Systems](https://analyticsindiamag.com/10-question-answering-datasets-to-build-robust-chatbot-systems/)
+2. [SQuAD2.0: 
+3. The Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/)
