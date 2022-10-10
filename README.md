@@ -38,5 +38,12 @@ Analyze the accuracy and consistency of each QA system. Analyze the answering ca
 
 Besides the `qa_submission.xlsx`, submit report containing the required analysis in pdf format to the web school.
 
+## Steps
+1. reformat `SQuAD2.0` dataset to required format in `qa_submission.numbers`, with ground truth answer from `SQuAD2.0` dataset (answer text, answer position, quesition id, etc., enough for locating the answer).
+2. translate the questions into Chinese with opensource translators
+3. test the questions on the QA systems
+4. evaluate the correctness
+5. analyze and write report
+
 ## Resources
 1. [SQuAD2.0: The Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/), [Dev Set v2.0](https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json)
