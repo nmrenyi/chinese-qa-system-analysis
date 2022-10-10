@@ -4,6 +4,7 @@ venv/
 credentials/
 input/
 output/
+dataset/
 
 
 # Python .gitignore from https://github.com/github/gitignore/blob/main/Python.gitignore
