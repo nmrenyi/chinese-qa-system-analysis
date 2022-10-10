@@ -41,6 +41,8 @@ Besides the `qa_submission.xlsx`, submit report containing the required analysis
 ## Steps
 1. reformat `SQuAD2.0` dataset to required format in `qa_submission.numbers`, with ground truth answer from `SQuAD2.0` dataset (answer text, answer position, quesition id, etc., enough for locating the answer).
 2. translate the questions into Chinese with opensource translators
+    - [Google Translation](https://cloud.google.com/translate)
+    - [Microsoft Translation](https://www.microsoft.com/en-us/translator/business/trial/)
 3. test the questions on the QA systems
 4. evaluate the correctness
 5. analyze and write report
