@@ -32,7 +32,7 @@ def main():
 
     df = pd.read_csv(in_file, sep='\t')
     print(df.info())
-    for q in tqdm(df['question']):
+    for q in tqdm(df['question_zh-cn']):
         for engine in engine_dict:
             try:
                 print('question is: {},'.format(q), 'engine is: {}'.format(engine))
